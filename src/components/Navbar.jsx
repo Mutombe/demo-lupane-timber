@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { List, X, WhatsappLogo, Phone } from '@phosphor-icons/react';
+import { List, X, WhatsappLogo, Phone, MagnifyingGlass } from '@phosphor-icons/react';
 import { business, waHref } from '../data/siteData';
 
 const links = [
@@ -13,7 +13,7 @@ const links = [
   { to: '/contact', label: 'Contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onOpenSearch }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const loc = useLocation();
@@ -86,6 +86,14 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-1 sm:gap-2">
+            <button
+              type="button"
+              onClick={onOpenSearch}
+              aria-label="Search the site"
+              className="hidden md:flex h-10 w-10 items-center justify-center text-char-700 hover:text-wine-700 transition-colors"
+            >
+              <MagnifyingGlass size={18} />
+            </button>
             <a
               href={`tel:${business.phone.replace(/\s/g, '')}`}
               aria-label="Call Lupane"
@@ -104,6 +112,14 @@ export default function Navbar() {
               <WhatsappLogo size={15} weight="fill" />
               Enquire
             </a>
+            <button
+              type="button"
+              onClick={onOpenSearch}
+              aria-label="Search the site"
+              className="h-11 w-11 flex md:hidden items-center justify-center text-char-800 hover:text-wine-700 transition-colors"
+            >
+              <MagnifyingGlass size={20} />
+            </button>
             <button
               onClick={() => setOpen(true)}
               aria-label="Open menu"
@@ -141,6 +157,17 @@ export default function Navbar() {
             </button>
           </div>
           <nav className="flex-1 flex flex-col px-6 py-8 gap-1 overflow-y-auto">
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                onOpenSearch?.();
+              }}
+              className="mb-4 flex items-center gap-3 px-4 py-3 border border-cream-300 text-char-700 hover:border-wine-700 hover:text-wine-700 transition-colors text-[13px] tracking-wide"
+            >
+              <MagnifyingGlass size={16} />
+              Search the yard
+            </button>
             {links.map((l) => (
               <NavLink
                 key={l.to}

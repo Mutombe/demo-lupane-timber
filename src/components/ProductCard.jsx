@@ -3,7 +3,7 @@ import { ArrowUpRight, WhatsappLogo } from '@phosphor-icons/react';
 import { waHref } from '../data/siteData';
 
 export default function ProductCard({ product }) {
-  const msg = `Hello Lupane — I'd like a quote on ${product.name}.`;
+  const msg = `Hi Lupane, I'd like a quote on ${product.name}.`;
   return (
     <article className="group bg-cream-50 border border-cream-300 flex flex-col overflow-hidden transition-colors hover:border-wine-700">
       <div className="relative aspect-[4/3] overflow-hidden bg-cream-200">

@@ -1,6 +1,9 @@
 import React from 'react';
+import { WhatsappLogo, ArrowUpRight } from '@phosphor-icons/react';
+import { waHref } from '../data/siteData';
 
 export default function SpeciesCard({ species, reverse = false, index = 0 }) {
+  const stockMsg = `Hi Lupane, do you have ${species.name} in stock?`;
   return (
     <article className="grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">
       <div
@@ -61,6 +64,23 @@ export default function SpeciesCard({ species, reverse = false, index = 0 }) {
           <p className="text-[14px] text-char-700 leading-relaxed">
             {species.uses}
           </p>
+        </div>
+
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <a
+            href={waHref(stockMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Ask about ${species.name} stock on WhatsApp`}
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 text-[11.5px] tracking-[0.14em] uppercase hover:bg-[#1fb058] transition-colors"
+          >
+            <WhatsappLogo size={14} weight="fill" />
+            Ask about stock
+            <ArrowUpRight size={13} />
+          </a>
+          <span className="text-[12px] text-char-500 italic">
+            Usually in, sometimes cut to order.
+          </span>
         </div>
       </div>
     </article>
