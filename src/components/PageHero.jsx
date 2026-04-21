@@ -12,6 +12,8 @@ export default function PageHero({ eyebrow, title, accent, sub, crumbs = [], ima
             alt=""
             aria-hidden="true"
             loading="eager"
+            fetchpriority="high"
+            decoding="async"
             onError={(e) => (e.currentTarget.style.display = 'none')}
             className="absolute inset-0 h-full w-full object-cover object-center opacity-45"
           />

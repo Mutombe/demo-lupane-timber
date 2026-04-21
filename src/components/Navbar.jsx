@@ -48,17 +48,15 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-5 lg:px-10 h-[76px] sm:h-20 flex items-center justify-between gap-3">
-          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
+          <Link to="/" className="flex items-center group min-w-0" aria-label={business.name}>
             <img
               src={business.logo}
               alt={business.name}
-              className="h-12 sm:h-14 w-auto shrink-0"
+              className="h-11 sm:h-12 lg:h-14 w-auto shrink-0 select-none"
               loading="eager"
+              decoding="async"
               onError={(e) => (e.currentTarget.style.display = 'none')}
             />
-            <span className="hidden sm:block font-display text-[19px] leading-none tracking-tight text-wine-700 truncate">
-              {business.name}
-            </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-7">

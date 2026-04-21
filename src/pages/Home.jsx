@@ -44,11 +44,13 @@ export default function Home() {
       />
 
       {/* ============ HERO ============ */}
-      <section className="relative bg-char-900 text-cream-50 overflow-hidden">
+      <section className="relative bg-char-900 text-cream-50 overflow-hidden min-h-[calc(100svh-5rem)] flex items-center">
         <img
           src={hero.heroImage}
           alt={hero.heroAlt}
           loading="eager"
+          fetchpriority="high"
+          decoding="async"
           onError={(e) => (e.currentTarget.style.display = 'none')}
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -56,30 +58,33 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-char-900/70 via-transparent to-transparent" />
         <div className="grain" />
 
-        <div className="relative max-w-[1400px] mx-auto px-5 lg:px-10 pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-32 lg:pb-36 min-h-[680px] sm:min-h-[760px] flex items-center">
+        <div className="relative w-full max-w-[1400px] mx-auto px-5 lg:px-10 py-10 sm:py-14 lg:py-16">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-4 sm:mb-5">
               <span className="h-px w-10 bg-brass-400" />
-              <p className="font-accent text-xl sm:text-2xl text-brass-300">
+              <p className="font-accent text-lg sm:text-xl text-brass-300">
                 {hero.eyebrow}
               </p>
             </div>
 
-            <h1 className="font-display text-[44px] sm:text-7xl lg:text-[88px] leading-[0.98] text-balance">
+            <h1
+              className="font-display leading-[0.98] text-balance"
+              style={{ fontSize: 'clamp(2.25rem, 6.2vw, 4.75rem)' }}
+            >
               {hero.headline}
               <span className="block italic text-brass-300 mt-1 sm:mt-2">
                 {hero.headlineAccent}
               </span>
             </h1>
 
-            <p className="mt-7 sm:mt-9 text-cream-200/85 text-base lg:text-lg leading-relaxed max-w-xl text-pretty">
+            <p className="mt-5 sm:mt-6 text-cream-200/85 text-[15px] sm:text-base lg:text-lg leading-relaxed max-w-xl text-pretty">
               {hero.sub}
             </p>
 
-            <div className="mt-9 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <div className="mt-6 sm:mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <Link
                 to={hero.ctaPrimary.to}
-                className="inline-flex items-center justify-center gap-2 bg-brass-400 text-char-900 px-8 py-4 text-[12.5px] tracking-[0.14em] uppercase font-semibold hover:bg-brass-300 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-brass-400 text-char-900 px-7 py-3.5 min-h-[44px] text-[12.5px] tracking-[0.14em] uppercase font-semibold hover:bg-brass-300 transition-colors"
               >
                 {hero.ctaPrimary.label}
                 <ArrowRight size={14} weight="bold" />
@@ -88,20 +93,20 @@ export default function Home() {
                 href={hero.ctaSecondary.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 border border-cream-50/80 text-cream-50 px-8 py-4 text-[12.5px] tracking-[0.14em] uppercase hover:bg-cream-50 hover:text-char-900 transition-colors"
+                className="inline-flex items-center justify-center gap-2 border border-cream-50/80 text-cream-50 px-7 py-3.5 min-h-[44px] text-[12.5px] tracking-[0.14em] uppercase hover:bg-cream-50 hover:text-char-900 transition-colors"
               >
                 <WhatsappLogo size={15} weight="fill" />
                 {hero.ctaSecondary.label}
               </a>
             </div>
 
-            <dl className="mt-14 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-6 max-w-2xl border-t border-cream-50/15 pt-8">
+            <dl className="mt-8 sm:mt-10 grid grid-cols-2 sm:grid-cols-4 gap-y-5 gap-x-6 max-w-2xl border-t border-cream-50/15 pt-6">
               {hero.stats.map((s) => (
                 <div key={s.label}>
-                  <dt className="font-display text-2xl sm:text-3xl text-cream-50">
+                  <dt className="font-display text-xl sm:text-2xl lg:text-3xl text-cream-50">
                     {s.value}
                   </dt>
-                  <dd className="text-[10.5px] tracking-[0.18em] uppercase text-cream-200/70 mt-1">
+                  <dd className="text-[10px] sm:text-[10.5px] tracking-[0.18em] uppercase text-cream-200/70 mt-1">
                     {s.label}
                   </dd>
                 </div>
@@ -201,6 +206,7 @@ export default function Home() {
                       src={s.image}
                       alt={s.imageAlt}
                       loading="lazy"
+                      decoding="async"
                       onError={(e) => (e.currentTarget.style.display = 'none')}
                       className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-[1200ms] group-hover:scale-[1.06]"
                     />
@@ -376,9 +382,10 @@ export default function Home() {
       {/* ============ CTA — with image background ============ */}
       <section className="relative bg-char-900 text-cream-50 overflow-hidden">
         <img
-          src="/images/mukwa-dining-table.jpg"
-          alt="A mukwa hardwood table reflects light in a Harare dining room"
+          src="https://images.unsplash.com/photo-1542044801-30d3e45ae49a?auto=format&fit=crop&w=1800&q=80"
+          alt="Macro grain of planed hardwood catching the light"
           loading="lazy"
+          decoding="async"
           onError={(e) => (e.currentTarget.style.display = 'none')}
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

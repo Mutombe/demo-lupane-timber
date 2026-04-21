@@ -11,6 +11,7 @@ export default function ProductCard({ product }) {
           src={product.image}
           alt={product.imageAlt}
           loading="lazy"
+          decoding="async"
           onError={(e) => (e.currentTarget.style.display = 'none')}
           className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
         />

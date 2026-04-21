@@ -26,19 +26,17 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-12 gap-10 sm:gap-12">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-4 space-y-5">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="h-11 w-11 bg-cream-50 flex items-center justify-center shrink-0">
+            <Link to="/" className="inline-flex items-center" aria-label={business.name}>
+              <div className="inline-flex items-center justify-center bg-cream-50 px-4 py-3">
                 <img
                   src={business.logo}
                   alt={business.name}
-                  className="h-9 w-auto"
+                  className="h-10 sm:h-12 w-auto"
                   loading="lazy"
+                  decoding="async"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                 />
               </div>
-              <span className="font-display text-xl text-cream-50">
-                {business.name}
-              </span>
             </Link>
             <p className="text-sm text-cream-200/80 leading-relaxed max-w-sm">
               {business.tagline} A working sawmill in the Lupane forests, a finishing workshop in Harare — everything in between is ours.

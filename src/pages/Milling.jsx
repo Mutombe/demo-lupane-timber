@@ -154,6 +154,7 @@ export default function Milling() {
                   src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1400&q=80"
                   alt="Hands of a sawyer examining the surface of a freshly planed hardwood board"
                   loading="lazy"
+                  decoding="async"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                   className="absolute inset-0 h-full w-full object-cover object-center"
                 />

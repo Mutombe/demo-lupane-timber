@@ -11,6 +11,7 @@ export default function SpeciesCard({ species, reverse = false, index = 0 }) {
             src={species.image}
             alt={species.imageAlt}
             loading="lazy"
+            decoding="async"
             onError={(e) => (e.currentTarget.style.display = 'none')}
             className="absolute inset-0 h-full w-full object-cover object-center"
           />

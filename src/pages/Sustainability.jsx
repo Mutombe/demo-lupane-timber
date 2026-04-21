@@ -107,9 +107,10 @@ export default function Sustainability() {
       {/* Wide forest quote */}
       <section className="relative bg-char-900 text-cream-50 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=1800&q=80"
-          alt="A mature indigenous forest in Matabeleland"
+          src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=80"
+          alt="Aerial view over a mature indigenous forest canopy"
           loading="lazy"
+          decoding="async"
           onError={(e) => (e.currentTarget.style.display = 'none')}
           className="absolute inset-0 h-full w-full object-cover object-center opacity-45"
         />
