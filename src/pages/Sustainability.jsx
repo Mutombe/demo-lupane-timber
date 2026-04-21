@@ -32,7 +32,7 @@ export default function Sustainability() {
         accent="Two years to season."
         sub="Indigenous hardwood is not a renewable commodity in the modern sense — it's a generational trust. Here is how we honour that at Lupane."
         crumbs={[{ label: 'Sustainability' }]}
-        image="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=1800&q=80"
+        image="https://images.unsplash.com/photo-1580411297422-e39730bb26dc?auto=format&fit=crop&w=1800&q=80"
       />
 
       {/* Key stat panel */}
@@ -107,7 +107,7 @@ export default function Sustainability() {
       {/* Wide forest quote */}
       <section className="relative bg-char-900 text-cream-50 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=80"
+          src="https://images.unsplash.com/photo-1730470824798-9a50f3a7c752?auto=format&fit=crop&w=1800&q=80"
           alt="Aerial view over a mature indigenous forest canopy"
           loading="lazy"
           decoding="async"

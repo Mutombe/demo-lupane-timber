@@ -86,7 +86,7 @@ export default function Contact() {
         accent="or send the drawing."
         sub="We're at 25 Connaught Road in Avondale, Harare — six days a week. Message on WhatsApp is fastest; email if the project is a detailed one."
         crumbs={[{ label: 'Contact' }]}
-        image="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=80"
+        image="https://images.unsplash.com/photo-1544691560-fc2053d97726?auto=format&fit=crop&w=1800&q=80"
       />
 
       {/* Quick contact cards */}

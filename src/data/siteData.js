@@ -48,7 +48,7 @@ export const hero = {
     label: "Get a Quote",
     href: waHref("Hello Lupane Timbers — I'd like a quote."),
   },
-  heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1800&q=80",
+  heroImage: "https://images.unsplash.com/photo-1634672652995-ee7525bce595?auto=format&fit=crop&w=1800&q=80",
   heroAlt: "Stacks of freshly milled indigenous hardwood seasoning in the open air",
   stats: [
     { value: "13+",  label: "Years milling" },
@@ -84,8 +84,8 @@ export const species = [
     ],
     uses: "Premium doors, window frames, dining tables, joinery, veneers, sculpture.",
     why: "If Zimbabwe had a national wood, Mukwa would be it. It moves little after seasoning, polishes to a deep lacquer-glow, and the grain tells the story of the tree it came from.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Warm hardwood furniture in a softly lit room — the Mukwa finish character",
+    image: "https://images.unsplash.com/photo-1736506159920-aa3701dc1ee6?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Warm golden-brown Mukwa grain — the storyteller's timber",
   },
   {
     slug: "zimbabwean-teak",
@@ -102,8 +102,8 @@ export const species = [
     ],
     uses: "Flooring, decking, exterior doors, railway sleepers, heavy furniture.",
     why: "A Kalahari-edge species that is harder than most imported teak and weathers to a silver-grey patina outdoors. Impervious to termites and reliable in Zimbabwe's swings from dry to wet.",
-    image: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Dense reddish-brown Zimbabwean teak hardwood planks stacked for seasoning",
+    image: "https://images.unsplash.com/photo-1506968430777-bf7784a87f23?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Dense red-brown Zimbabwean teak planks — the railway-grade workhorse",
   },
   {
     slug: "mopane",
@@ -120,8 +120,8 @@ export const species = [
     ],
     uses: "Musical instruments, turned bowls, parquet flooring, fence posts, high-end furniture.",
     why: "Mopane grows where little else survives, and that hardship shows in the wood: extreme density, near-ebony depth, and a surface that takes a mirror polish. Reserved for pieces meant to last generations.",
-    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Dark mopane hardwood close-up showing near-black interlocked grain",
+    image: "https://images.unsplash.com/photo-1736506159776-22ca388780fa?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Dark chocolate-brown Mopane grain — the unbreakable indigenous hardwood",
   },
   {
     slug: "mahogany",
@@ -138,8 +138,8 @@ export const species = [
     ],
     uses: "Cabinetmaking, staircases, panelling, veneer, boat interiors, fine furniture.",
     why: "Works like a dream under hand tools. Our mahogany is supplied kiln-dry for stable panelling and comes ribbon-matched for book-matched doors and table aprons.",
-    image: "https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Warm mahogany planks with ribbon-stripe grain figure",
+    image: "https://images.unsplash.com/photo-1736506159893-22cca29b8018?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "African mahogany with a cathedral ribbon-stripe grain figure",
   },
   {
     slug: "pine",
@@ -156,8 +156,8 @@ export const species = [
     ],
     uses: "Roof trusses, construction framing, shuttering, utility furniture, pallets.",
     why: "Every build needs a sensible softwood. Ours is CCA-treated on request, cut to standard SANS 1783 lengths, and graded before it leaves the yard.",
-    image: "https://images.unsplash.com/photo-1558051815-0f18e64e6280?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Stacked pine timber showing pale cream colour with vertical grain",
+    image: "https://images.unsplash.com/photo-1763392199096-6efd9d28d8cc?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Pale cream SA pine grain with a clean, uniform figure",
   },
   {
     slug: "msasa",
@@ -174,8 +174,8 @@ export const species = [
     ],
     uses: "Feature furniture, counter tops, turned work, decorative panelling.",
     why: "The tree that turns Zimbabwe red-gold each spring. Milled as statement slabs and live-edge counters — no two pieces repeat. Limited stock, seasoned patiently.",
-    image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Wide msasa slab with honey ground and streaky dark grain figure",
+    image: "https://images.unsplash.com/photo-1583418007992-a8e33a92e7ad?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Msasa slab with honey ground and wild streaky dark spalting",
   },
   {
     slug: "blackwood",
@@ -192,8 +192,8 @@ export const species = [
     ],
     uses: "Instrument parts, high-end turnery, inlay, knife scales, heirloom accents.",
     why: "Mpingo is the wood woodwind-makers around the world travel for. We stock a small parcel in short billets — for the piece that has to be perfect.",
-    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Close-up macro of black African blackwood showing fine grain and polished finish",
+    image: "https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Near-black African blackwood grain — the museum-grade mpingo",
   },
 ];
 
@@ -209,8 +209,8 @@ export const products = [
       length: "up to 4.8 m",
     },
     species: ["Mukwa", "Teak", "Pine", "Mahogany"],
-    image: "https://images.unsplash.com/photo-1504198458649-3128b932f49e?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Stacked sawn hardwood planks at a timber yard",
+    image: "https://images.unsplash.com/photo-1702195789139-4897ff9b0083?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Stacked rough-sawn hardwood boards with live-edge bark at a timber yard",
     lead: "48 hr to 3 weeks (species dependent)",
   },
   {
@@ -223,8 +223,8 @@ export const products = [
       length: "residential & commercial",
     },
     species: ["Mukwa", "Teak"],
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Solid-wood pivot door in a modern interior — the kind of finished piece our teak and mukwa go into",
+    image: "https://images.unsplash.com/photo-1634822930432-0594057fdff2?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Tall slatted solid-timber pivot doors — the kind our mukwa and teak go into",
     lead: "4 – 8 weeks",
   },
   {
@@ -237,8 +237,8 @@ export const products = [
       length: "random length",
     },
     species: ["Teak", "Mopane", "Mukwa"],
-    image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Hardwood tongue-and-groove flooring in a living room",
+    image: "https://images.unsplash.com/photo-1548268364-3acee266b695?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Warm-toned herringbone hardwood parquet flooring",
     lead: "2 – 4 weeks",
   },
   {
@@ -251,8 +251,8 @@ export const products = [
       length: "1.8 – 4.2 m",
     },
     species: ["Teak", "Mukwa"],
-    image: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Timber decking boards installed beside a swimming pool",
+    image: "https://images.unsplash.com/photo-1574120583586-de8847ae992c?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Warm timber decking terrace wrapping a forest-edge home",
     lead: "2 – 5 weeks",
   },
   {
@@ -265,8 +265,8 @@ export const products = [
       length: "up to 6.6 m",
     },
     species: ["Pine (SANS 1783 Grade 5 & above)"],
-    image: "https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Exposed pine roof trusses in a new-build house",
+    image: "https://images.unsplash.com/photo-1741916540147-9be1d2b20d32?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Exposed pine roof trusses on a new-build roof",
     lead: "Ex-stock",
   },
   {
@@ -279,8 +279,8 @@ export const products = [
       length: "up to 4.8 m",
     },
     species: ["All species"],
-    image: "https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Hardwood lumber yard with custom milled boards",
+    image: "https://images.unsplash.com/photo-1667689815944-9f72c0f59e74?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Live-edge slab stack at the mill — custom hardwood cut to drawing",
     lead: "1 – 3 weeks",
   },
   {
@@ -293,8 +293,8 @@ export const products = [
       length: "random length",
     },
     species: ["Mukwa", "Mahogany", "Blackwood (short billets)"],
-    image: "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Prepared hardwood joinery blanks squared and ready for the workshop",
+    image: "https://images.unsplash.com/photo-1572726272916-021d1ef0bbf4?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Planed pine joinery blanks squared on four sides and ready for the workshop",
     lead: "1 – 2 weeks",
   },
   {
@@ -307,7 +307,7 @@ export const products = [
       length: "1.0 – 1.4 m",
     },
     species: ["Pine"],
-    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=1400&q=80",
+    image: "https://images.unsplash.com/photo-1680268997856-d278566cbcf1?auto=format&fit=crop&w=1400&q=80",
     imageAlt: "Heat-treated export pine pallets stacked in a yard",
     lead: "5 – 10 days",
   },
@@ -464,8 +464,8 @@ export const story = {
     { label: "Harare yard", value: "25 Connaught Rd" },
     { label: "Team", value: "32 people" },
   ],
-  image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=80",
-  imageAlt: "A warm wood-panelled interior showing the craft outcomes of Lupane's timber",
+  image: "https://images.unsplash.com/photo-1700831213936-44bb92582be4?auto=format&fit=crop&w=1800&q=80",
+  imageAlt: "A Stanley hand plane surrounded by fresh wood shavings — the Lupane craft",
 };
 
 // ---------- NOT FOUND ----------

@@ -382,7 +382,7 @@ export default function Home() {
       {/* ============ CTA — with image background ============ */}
       <section className="relative bg-char-900 text-cream-50 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1542044801-30d3e45ae49a?auto=format&fit=crop&w=1800&q=80"
+          src="https://images.unsplash.com/photo-1515446134809-993c501ca304?auto=format&fit=crop&w=1800&q=80"
           alt="Macro grain of planed hardwood catching the light"
           loading="lazy"
           decoding="async"

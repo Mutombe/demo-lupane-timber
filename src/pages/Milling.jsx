@@ -55,7 +55,7 @@ export default function Milling() {
         accent="hand grader, kiln."
         sub="The mill in Lupane is where every board starts. A modern bandsaw, two heat-pump kilns and a joinery workshop — run by a team that has been sawing for decades."
         crumbs={[{ label: 'Milling' }]}
-        image="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=1800&q=80"
+        image="https://images.unsplash.com/photo-1678184095566-3980f43c41eb?auto=format&fit=crop&w=1800&q=80"
       />
 
       {/* Five-step process */}
@@ -151,8 +151,8 @@ export default function Milling() {
             <SectionReveal>
               <div className="relative aspect-[4/5] overflow-hidden bg-cream-200">
                 <img
-                  src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1400&q=80"
-                  alt="Hands of a sawyer examining the surface of a freshly planed hardwood board"
+                  src="https://images.unsplash.com/photo-1566744883356-fb704591844e?auto=format&fit=crop&w=1400&q=80"
+                  alt="Forest logs stacked at the Lupane mill — sustainably harvested indigenous hardwoods"
                   loading="lazy"
                   decoding="async"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
