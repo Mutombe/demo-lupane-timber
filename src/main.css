@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@theme {
+  /* === BRAND — extracted from logo: deep wine/maroon (#3A0A15) on cream === */
+  --color-wine-50:  #FBF3F4;
+  --color-wine-100: #F6E2E5;
+  --color-wine-200: #E9B9BF;
+  --color-wine-300: #D2848F;
+  --color-wine-400: #9E3846;
+  --color-wine-500: #6E1A28;
+  --color-wine-600: #561220;
+  --color-wine-700: #3A0A15;   /* primary brand — logo color */
+  --color-wine-800: #27080F;
+  --color-wine-900: #170509;
+
+  /* === TIMBER — warm mukwa / teak browns === */
+  --color-timber-50:  #FBF6EE;
+  --color-timber-100: #F4E9D4;
+  --color-timber-200: #E5CFA6;
+  --color-timber-300: #D1AE74;
+  --color-timber-400: #B8884A;   /* mukwa honey */
+  --color-timber-500: #8E6230;
+  --color-timber-600: #6B4820;
+  --color-timber-700: #4D3317;
+  --color-timber-800: #32210F;
+  --color-timber-900: #1C1208;
+
+  /* === CREAM — weathered off-white, feels like pale sawdust === */
+  --color-cream-50:  #FBF8F1;
+  --color-cream-100: #F6F0E2;
+  --color-cream-200: #EDE3CE;
+  --color-cream-300: #DDD0B4;
+  --color-cream-400: #C4B491;
+
+  /* === FOREST — deep mopane-forest green === */
+  --color-forest-50:  #F1F5F0;
+  --color-forest-100: #DEE7DB;
+  --color-forest-200: #B6C9B0;
+  --color-forest-400: #5C7E55;
+  --color-forest-600: #2E4A2B;
+  --color-forest-800: #1C2F1A;
+  --color-forest-900: #0E180D;
+
+  /* === BRASS — warm amber/honey accent === */
+  --color-brass-300: #E7C07A;
+  --color-brass-400: #CFA352;
+  --color-brass-500: #B28635;
+  --color-brass-600: #8E6A26;
+
+  /* === CHAR — deep warm charcoal for type === */
+  --color-char-50:  #F6F4F1;
+  --color-char-100: #E7E3DD;
+  --color-char-300: #A39C90;
+  --color-char-500: #5A5146;
+  --color-char-700: #322B22;
+  --color-char-800: #1E1A14;
+  --color-char-900: #100D09;
+
+  /* === Typography === */
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-accent: 'Caveat', cursive;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-cream-50);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-char-800);
+  background: var(--color-cream-50);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-wine-700);
+  color: var(--color-cream-50);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-cream-100); }
+::-webkit-scrollbar-thumb { background: var(--color-timber-300); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-timber-500); }
+
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+.font-accent { font-family: var(--font-accent); }
+
+.text-balance { text-wrap: balance; }
+.text-pretty  { text-wrap: pretty; }
+
+/* === Paper / sawdust grain texture === */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+}
+
+/* === Wood-grain horizontal striations === */
+.wood-grain {
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      transparent 0 7px,
+      rgba(50, 33, 15, 0.05) 7px 8px,
+      transparent 8px 22px,
+      rgba(50, 33, 15, 0.03) 22px 23px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 120px,
+      rgba(50, 33, 15, 0.04) 120px 121px
+    );
+}
+
+.glass-cream {
+  background: rgba(251, 248, 241, 0.82);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid rgba(58, 10, 21, 0.08);
+}
+
+.brass-ring {
+  box-shadow:
+    0 0 0 1px rgba(178, 134, 53, 0.25),
+    0 0 32px rgba(178, 134, 53, 0.18);
+}
+
+.halo-warm {
+  background: radial-gradient(circle at center,
+    rgba(207, 163, 82, 0.30) 0%,
+    rgba(178, 134, 53, 0.10) 40%,
+    transparent 72%);
+}
+
+/* Wine underline accent for h1 display text */
+.wine-underline {
+  position: relative;
+  display: inline-block;
+}
+.wine-underline::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -4px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-wine-700), var(--color-brass-400));
+  opacity: 0.9;
+}
+
+@keyframes drift-slow {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50%      { transform: translate(12px, -14px) rotate(4deg); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes ember-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50%      { opacity: 0.58; transform: scale(1.06); }
+}
+
+.animate-drift-slow   { animation: drift-slow 14s ease-in-out infinite; }
+.animate-marquee      { animation: marquee 48s linear infinite; }
+.animate-ember-pulse  { animation: ember-pulse 5s ease-in-out infinite; }
+
+:focus-visible {
+  outline: 2px solid var(--color-wine-700);
+  outline-offset: 2px;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
